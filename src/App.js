@@ -8,7 +8,7 @@ const App = () => {
 
   const [recipes, setRecipes] = useState([])
   const [search, setSearch] = useState("")
-  const [query, setQuery] = useState("chicken")
+  const [query, setQuery] = useState("banana")
 
   useEffect(() => {
     getRecipes()
@@ -34,7 +34,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Hello React!</h1>
       <form onSubmit={getSearch} className="search-form">
         <input
           type="text"
@@ -53,6 +52,7 @@ const App = () => {
             title={recipe.recipe.label}
             calories={recipe.recipe.calories}
             image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
           />
         )
       })}

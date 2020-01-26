@@ -1,11 +1,18 @@
 import React from "react"
 
-const Recipe = ({ title, image, calories }) => {
+const Recipe = ({ title, image, calories, ingredients }) => {
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{Math.round(calories)} kcal</p>
-      <img alt="food" src={image} />
+    <div className="wrapper">
+      <div className="card">
+        <h2>{title}</h2>
+        <p>{Math.round(calories)} kcal</p>
+        <ol>
+          {ingredients.map(ingredient => (
+            <li>{ingredient.text}</li>
+          ))}
+        </ol>
+        <img alt="food" src={image} />
+      </div>
     </div>
   )
 }
