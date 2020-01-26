@@ -4,7 +4,7 @@ const Recipe = ({ title, image, calories }) => {
   return (
     <div>
       <h2>{title}</h2>
-      <p>{calories}</p>
+      <p>{Math.round(calories)} kcal</p>
       <img alt="food" src={image} />
     </div>
   )
