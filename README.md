@@ -1,3 +1,5 @@
+Fetching a cool recipe API from https://www.edamam.com and displaying the content in some basic Card components.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
