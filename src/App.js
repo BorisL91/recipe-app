@@ -40,6 +40,7 @@ const App = () => {
           className="search-bar"
           value={search}
           onChange={handleInputChange}
+          placeholder="Enter you favorite food or ingredient to find some cool recipes e.g Mango"
         />
         <button type="submit" className="search-button">
           Search
